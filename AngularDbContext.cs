@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ApiAngular.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiAngular
 {
@@ -8,6 +9,11 @@ namespace ApiAngular
         {
                 
         }
+        public DbSet<paisModel> Paises { get; set; }
+        public DbSet<provinciaModel> Provincias { get; set; }
+        public DbSet<cantonModel> Cantones { get; set; }
+        public DbSet<direccionModel> Direcciones { get; set; }
+
 
     }
 }
